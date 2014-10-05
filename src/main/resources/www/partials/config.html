@@ -1,0 +1,18 @@
+<div class="container" style="padding:20px">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th/>
+      <th ng-repeat="column in headers">{{column}}</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in rows">
+      <td >{{row}}</td>
+      <td ng-repeat="column in headers">
+          <button ng-class="active(column, row)" ng-click="toggle(column, row)">{{connected(column, row)}}</button>
+      </td>
+    </tr>  
+  </tbody>
+</table>
+</div>

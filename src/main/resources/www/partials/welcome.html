@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>SpraySpa 2014 Demo</h1>
+    </div>
+</div>
+
+<div class="container">
+    <p class="lead">Please register your client</p>
+    <div class="input-append">
+      <input class="span2 btn-large" id="clientName" type="text" ng-model="clientName">
+      <div class="btn-group">
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+          Type
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li ng-repeat="item in clientTypes">
+                <a ng-click="registerClient(item)">{{item.name}}</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>

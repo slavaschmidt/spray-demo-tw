@@ -1,0 +1,30 @@
+
+<div class="jumbotron">
+    <div class="container">
+
+        <canvas id="compare" style="display:none;"></canvas>
+        <video  id="vid" autoplay loop></video>
+        <canvas id="overlay" ></canvas>
+        <canvas id="debug" style="display: none;"></canvas>
+
+        <p id='gUMMessage'></p>
+
+        <p><span id='headtrackerMessage'></span></p>
+        <br>
+        Угол: <span id='ang'></span>
+        <div>
+            <button class="btn" ng-click="restart()">Restart</button>
+            <button class="btn" ng-click="stopTracking()">Stop</button>
+        </div>
+        <div id='tab_p' style='height:100px; overflow:scroll;'>
+            <table id='angles' border=1 cellspacing=0>
+
+            </table>
+        </div>
+    </div>
+    <p>Original (Russian): http://habrahabr.ru/post/169249/</p>
+</div>
+<script type="text/javascript" src="js/kalman.js"></script>
+<script type="text/javascript" src="js/angle.js"></script>
+<script type="text/javascript" src="js/mid.js"></script>
+<script type="text/javascript" src="js/headtrackr.js"></script>
